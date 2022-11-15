@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none; 
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(Auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+}
+/* heade style  */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background:#7037C7;
+    color:#fff;
+}
+/* main style  */
+main{
+    padding-top: 80px;
+}
+.loader__title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 300;
+  }
+  
+  span {
+    font-size: 34px;
+    position: relative;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-position: right center;
+
+  }
+  .fond__title{
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-position: right center;
+
+  }
+  .let1 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .let2 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.6s;
+  }
+  
+  .let3 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.7s;
+  }
+  
+  .let4 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.8s;
+  
+  }
+  
+  .let5 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.9s;
+  }
+  
+  .let6 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .let7 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 1.1s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+  .btn__1{
+    background:linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    color:aliceblue;
+    transition: all 0.3s ease-in-out;
+    border:none;
+    border-radius:5px;
+    padding:5px 6px;
+
+  }
+  .btn__1:hover{
+    color:#fff;
+    background-position: right center;
+  }
+  .btn__1:active{
+    color:#fff;
+    opacity: 0.7;
+  }
+
+  /* Modal window style  */
+
+  .modal-window{
+    width: 100% !important;
+    min-height: 100% !important;
+    background: rgba(132, 132, 132, 0.674);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  .modal-window .modal-container{
+    max-width: 65%;
+    background-color: rgb(255, 60, 172);
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);    
+    box-shadow:  0px 0px 10px 0px rgba(255, 254, 255, 0.81);
+  }
+  .modal-content h4{  
+    color: #fff;
+  }
+    .modal-hide{
+    transform: translateY(-200%);
+    }
+    #close{
+    cursor: pointer;
+    position: absolute;
+    z-index: 2222222222;
+    top: 5px;
+    right: 15px;
+    }
+    .animation{
+        animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        animation-timing-function: cubic-bezier;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+    }
+    @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+
+      
